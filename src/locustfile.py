@@ -1,4 +1,8 @@
+import random
+from faker import Faker
 from locust import HttpUser, task, between
+
+fake = Faker()
 
 class ApiUser(HttpUser):
     """A user that tests the /users API endpoint."""
@@ -22,8 +26,8 @@ class ApiUser(HttpUser):
         """Task to simulate a POST request to /users."""
         # Define the JSON payload for creating a user
         user_data = {
-            "name": "Test User From Locust",
-            "age": 42
+            "name": fake.name(),
+            "age": random.randint(18, 90)
         }
 
         self.client.post(
