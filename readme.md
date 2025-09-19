@@ -2,6 +2,9 @@
 
 A starter project and guide for getting started with performance testing using Locust.
 
+<img width="1838" height="1076" alt="image" src="https://github.com/user-attachments/assets/7579829f-90f0-4370-a6b9-e1db0053f1d1" />
+
+
 ## 1. Installation
 
 First, ensure you have all the required Python packages installed. From your project's root directory, run:
